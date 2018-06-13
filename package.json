@@ -1,0 +1,24 @@
+{
+  "name": "serverless_tutorial",
+  "version": "1.0.0",
+  "description": "working through Serverless' tutorial: https://serverless.com/blog/serverless-express-rest-api/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hohenner/serverless_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hohenner/serverless_tutorial/issues"
+  },
+  "homepage": "https://github.com/hohenner/serverless_tutorial#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "serverless-http": "^1.5.5"
+  }
+}
