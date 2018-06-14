@@ -1,0 +1,9 @@
+custom:
+  myStage: ${opt:stage, self:provider.stage}
+  myProfile:
+    production: production
+    qa2: default
+  myEnvironment:
+    MESSAGE:
+      production: "This is production environment"
+      qa2: "This is qa2 environment"
