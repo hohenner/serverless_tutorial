@@ -2,15 +2,7 @@
 
 service: my-express-application
 
-custom:
-  myStage: ${opt:stage, self:provider.stage}
-  myProfile:
-    production: production
-    qa2: default
-  myEnvironment:
-    MESSAGE:
-      production: "This is production environment"
-      qa2: "This is qa2 environment"
+custom: ${file(./custom.yml):custom}
 
 provider:
   name: aws
@@ -18,6 +10,8 @@ provider:
   stage: dev
   region: us-east-1
   profile: ${self:custom.myProfile.${self:custom.myStage}}
+  environment:
+    ENVIRON: ${self:custom.myStage}
 
 functions:
   app:
